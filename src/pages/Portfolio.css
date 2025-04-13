@@ -1,0 +1,134 @@
+:root {
+  --Background-color: -webkit-linear-gradient(90deg, hsla(248, 80%, 10%, 1) 30%, hsla(228, 83%, 9%, 1) 40%, hsla(247, 87%, 12%, 1) 73%);
+  --light-color: #fff;
+  --dark-color: hsla(228, 64%, 8%, 1);
+  --danger-color: #68033c;
+}
+
+
+
+.portfolio {
+  background: var(--Background-color);
+  width: 100%;
+  height: 95vh;
+  color: var(--light-color);
+  padding: 2rem;
+  overflow-y: scroll;
+}
+
+.portfolio-header {
+  text-align: center;
+  color: var(--light-color);
+  margin-top: 5rem;
+}
+
+.portfolio-intro {
+  text-align: center;
+  color: var(--light-color);
+  margin: 1rem;
+  padding-bottom: 2rem;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+
+  overflow-y: scroll;
+}
+
+.portfolio-item {
+  max-height: 20rem;
+  max-width: 25rem;
+  height: 100%;
+  width: 100%;
+}
+
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  .portfolio-header {
+    text-align: center;
+    padding-bottom: 2rem;
+
+  }
+
+  /* .portfolio-intro {
+    margin-bottom: 3rem;
+  } */
+}
+
+@media only screen and (max-width: 1024px) {
+  .portfolio {
+
+    width: 100%;
+    height: 95vh;
+    color: var(--light-color);
+
+    overflow-y: scroll;
+  }
+
+  .portfolio-intro {
+    text-align: center;
+    color: var(--light-color);
+    margin: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .portfolio-container {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  .portfolio-header {
+    margin-top: 4rem;
+    text-align: center;
+    color: var(--light-color);
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .portfolio {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .portfolio-header {
+    text-align: center;
+    color: var(--light-color);
+  }
+
+  .portfolio-intro {
+    text-align: center;
+    color: var(--light-color);
+    margin: 1rem;
+  }
+
+  .portfolio-container {
+    height: 73%;
+  }
+
+  .portfolio-item {
+    width: 24rem
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+}

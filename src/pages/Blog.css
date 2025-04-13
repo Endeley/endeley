@@ -1,0 +1,119 @@
+:root {
+  --Background-color: -webkit-linear-gradient(90deg, hsla(248, 80%, 10%, 1) 30%, hsla(228, 83%, 9%, 1) 40%, hsla(247, 87%, 12%, 1) 73%);
+  --light-color: #fff;
+  --dark-color: hsla(228, 64%, 8%, 1);
+  --danger-color: #68033c;
+}
+
+main {
+  background: var(--Background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  width: 100vw;
+  padding: 2rem;
+
+
+
+}
+
+.main-blog {
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  overflow-y: scroll;
+}
+
+.main-blog h1 {
+  margin-top: 6rem;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.topPosts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+
+}
+
+
+.post {
+  width: 50%;
+  height: 300px;
+}
+
+
+
+
+
+.img-div {
+  max-height: 400px;
+  max-width: 500px;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+
+
+}
+
+.img-div img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+}
+
+
+.midblog {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 4rem;
+
+}
+
+.p-div {
+  padding: 0 4rem;
+}
+
+p {
+  height: 100%;
+  width: 100%;
+
+
+  overflow-y: scroll;
+
+}
+
+
+
+.tags {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.tags span {
+  font-size: 18px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  main {
+    height: 100vh;
+  }
+}

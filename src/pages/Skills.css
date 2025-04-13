@@ -1,0 +1,85 @@
+:root {
+  --Background-color: -webkit-linear-gradient(90deg, hsla(248, 80%, 10%, 1) 30%, hsla(228, 83%, 9%, 1) 40%, hsla(247, 87%, 12%, 1) 73%);
+  --light-color: #fff;
+  --dark-color: hsla(228, 64%, 8%, 1);
+  --danger-color: #68033c;
+}
+
+.skills-page {
+  background: var(--Background-color);
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: rgb(236, 231, 231);
+
+
+}
+
+.skills-intro {
+
+  height: auto;
+  width: 80%;
+  text-align: center;
+  overflow: auto;
+}
+
+.skills-intro p {
+  font-size: 1.5rem;
+
+
+}
+
+.skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50%;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+
+
+}
+
+.skills-description {
+  display: flex;
+  width: 12rem;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  color: sandybrown;
+
+  box-shadow: 0 4px 8px rgb(98, 27, 8);
+
+
+}
+
+span {
+  padding: 0.5rem;
+  font-size: 4rem;
+}
+
+
+small {
+  padding: 0.5rem;
+  font-size: 3rem;
+  color: rgb(177, 54, 20);
+}
+
+@media only screen and (max-width: 800px) {
+  .skills-page {
+    background: var(--Background-color);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(236, 231, 231);
+  }
+}

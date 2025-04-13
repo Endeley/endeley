@@ -1,0 +1,70 @@
+:root {
+  --Background-color: -webkit-linear-gradient(90deg, hsla(248, 80%, 10%, 1) 30%, hsla(228, 83%, 9%, 1) 40%, hsla(247, 87%, 12%, 1) 73%);
+  --light-color: #fff;
+  --dark-color: hsla(228, 64%, 8%, 1);
+  --danger-color: #68033c;
+}
+
+
+
+
+main {
+  background: var(--Background-color);
+  height: 95vh;
+  width: 100%;
+  color: rgb(236, 231, 231);
+
+}
+
+.container {
+  margin-top: 4rem;
+  overflow: scroll;
+}
+
+.header-div {
+  text-align: center;
+  padding: 2rem;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.service {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  text-align: center;
+  margin: 1rem;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+.service p {
+  padding: 2rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px solid var(--danger-color);
+  background: var(--dark-color);
+  color: var(--light-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
